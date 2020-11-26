@@ -40,7 +40,7 @@
     cout<< "Enter the radius of the circle to find the area of the circle.\n";//Prints command.
     cin>>radius;//User inputs radius.
     area = PI * radius * radius;//Sum for calculating the area of a circle.
-    cout<<"The area of the circle is "<<area<<"\n"<<endl;//Prints out the answer.
+    cout<<"The area of the circle is "<<area<<" meters squared."<<"\n"<<endl;//Prints out the answer.
     }
 
     //Exercise 6: Create a function that can calculate the area of a rectangle.
@@ -51,7 +51,7 @@
     cout<< "Please enter the width of the rectangle and hit return: "<<endl;//Prints command.
     cin>>width;//User inputs width.
     area = lenght * width;//Sum for calculating the area of a rectangle.
-    cout<< "The area of the rectangle is "<<area<<"\n"<<endl;//Prints out the answer.
+    cout<< "The area of the rectangle is "<<area<<" meters squared."<<"\n"<<endl;//Prints out the answer.
     }
 
     //Exercise 7: Create a function that prints an alarm message if temperature and/or humidity is too high.
@@ -75,3 +75,41 @@
     }
     }
 
+    //Exercise 8: Use a loop to find the area of multiple circles for every one meter of radius, upto and including 120meters.
+    Loop_Area_Circle(){//Finds the area of a circle automaticly for every one meter of radius, upto and including 120meters.
+    int sta =0;//Int Declaration. Start point.
+    int fin =120;//Int Declaration. Finish point.
+    float PI=3.14159;//Float Declaration.
+    float area, radius;//Float Declaration.
+    for (radius=sta; radius<=fin; radius++){//For loop.
+    area = PI * radius * radius;//Sum for calculating the area of a circle.
+    cout<< "When the radius is "<<radius<< " the area of the circle will be "<<area<< " meters squared.\n"<<endl;//Prints message.
+    }
+    }
+
+    //Exercise 9: Create a temperature conversion function.
+    Temp_Conv(){//Converts Fahrenheit to Celcius and vise versa.
+    int conv;//Int Declaration.
+    float ans;//Float answer
+    cout<<"Please select a temperature converter:"<<endl;//Prints command.
+    cout<<"Press 1 and hit enter to convert Fahrenheit to Celcius.\n";//Prints command.
+    cout<<"Press 2 and hit enter to convert Celcius to Fahrenheit.\n";//Prints command.
+    cin>>conv;//User inputs which temperature converter they want to use.
+    if (conv==1){//IF Condition.
+    float F;//Float Declaration.
+    cout<<"Enter the temperature in degrees Fahrenheit: ";//Prints command.
+    cin>>F;//User inputs temperature.
+    ans=((F-32)*5/9);//Sum for converting Fahrenheit to Celcius.
+    cout<<F<<" degrees Fahrenheit is "<<ans<<" degrees Celcius.\n"<<endl;//Prints answer.
+    }
+    else if (conv==2){
+    float C;//Float Declaration.
+    cout<<"Enter the temperature in degrees Celcius: ";//Prints command.
+    cin>>C;//User inputs temperature.
+    ans=((C*9/5)+32);//Sum for converting Celcius to Fahrenheit.
+    cout<<C<<" degrees Celcius is "<<ans<<" degrees Fahrenheit.\n"<<endl;//Prints answer.
+    }
+    else{
+    cout<< "You must select either 1 or 2.\n"<<endl;//Prints out command.
+    }
+    }

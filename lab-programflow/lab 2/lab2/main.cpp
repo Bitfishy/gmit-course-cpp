@@ -51,6 +51,12 @@ using namespace std;
     cout<< "Exercise 7: Temperature/Humidity alarm." <<endl;
     Temp_Hum_Alarm();//Exercise 7 funtion.
 
+    cout<< "Exercise 8: Run a loop test of the area of a circle." <<endl;
+    Loop_Area_Circle();//Exercise 8 function.
+
+    cout<< "Exercise 9: Write a temperature conversion function." <<endl;
+    Temp_Conv();//Exercise 9 function.
+
     return 0;
 
 }
