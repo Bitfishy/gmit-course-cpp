@@ -1,4 +1,9 @@
 # depslib dependency file v1.0
-1584205420 source:c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-programflow\lab 2\main.cpp
+1606320954 source:c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-programflow\lab 2\main.cpp
+	<iostream>
+	<ctime>
+	"function.h"
+
+1606321058 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-programflow\lab 2\function.h
 	<iostream>
 

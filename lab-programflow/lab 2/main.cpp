@@ -1,23 +1,22 @@
 #include <iostream>
-
+#include <ctime>
+#include "function.h"
 using namespace std;
 
 
-    void LabInfo(){
-    cout << "Stephen McDonagh\n";
-    cout << "Lab #2" << endl;
+
+    int main() {
+{
+     labinfo();
+}
+{
+    Largest_Val();
+}
+    return 0;
     }
 
-    int main(){
-    LabInfo:
 
-    if (x > y);
-    {
-    cout << "The largest value is " << x;
-}
-    else{
-    cout << "The largest value is " << y;
 
-    return 0;
 
-}
+
+
