@@ -1,9 +1,22 @@
 #include <iostream>
-
+#include <ctime>
+#include "function.h"
 using namespace std;
 
-int main()
+
+
+    int main() {
 {
-    cout << "Hello world!" << endl;
-    return 0;
+     labinfo();
 }
+{
+    Largest_Val();
+}
+    return 0;
+    }
+
+
+
+
+
+
