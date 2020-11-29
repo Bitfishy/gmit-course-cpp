@@ -1,7 +1,8 @@
 #include <iostream>
 using namespace std;
 #include "functions.h"
-
+#include "stdio.h"
+#include "stdlib.h"
 
     int main(){
     cout<< "Lab information"<<endl;
@@ -48,15 +49,47 @@ using namespace std;
     cout<< "Exercise 6: Calculate the area of a rectangle."<<endl;
     Area_Of_A_Rectangle();//Exercise 6 funtion.
 
-    cout<< "Exercise 7: Temperature/Humidity alarm." <<endl;
+    cout<< "Exercise 7: Temperature >=95 Alarm/Humidity >=90 Alarm." <<endl;
     Temp_Hum_Alarm();//Exercise 7 funtion.
 
-    cout<< "Exercise 8: Run a loop test of the area of a circle." <<endl;
-    Loop_Area_Circle();//Exercise 8 function.
+    cout<< "Exercise 8: Use a loop to find the area of multiple circles for every 1m of radius, upto and including 120m."<<endl;
+    char o;//Char Declaration.
+    cout<< "Tap t and hit return to test the loop for the area of multiple circles for every 1m of radius: "<<endl;
+    cin>>o;//User input.
+    if (o=='t'){//If Condition.
+    float PI=3.14159;//Float Declaration.
+    float area, radius;//Float Declaration.
+    for (radius=0; radius<=120; radius++){//For loop.
+    area = PI * radius * radius;//Sum for calculating the area of a circle.
+    cout<< "When the radius is "<<radius<< " the area of the circle will be "<<area<< " meters squared.\n"<<endl;//Prints message.
+    }}
+    else {//Else Condition.
+    cout<< "You selected the wrong input. Move on to the next exercise."<<endl;//Prints message.
+
+    }
 
     cout<< "Exercise 9: Write a temperature conversion function." <<endl;
     Temp_Conv();//Exercise 9 function.
 
+    cout<< "Exercise 10: Write a function to find all the even numbers from 0 to 1000 and print them." <<endl;
+    Even_Num();//Exercise 10 function.
+
+    cout<< "Exercise 11: Write a function that can take in 2 interger values and find the odd numbers inbetween each." <<endl;
+    Odd_Num();//Exercise 11 funtion.
+
+
+    cout<< "Exercise 12: Overloaded function of Q11/Array of values/Find odd numbers." <<endl;
+    Overload();//Exercise 12 function.
+
+    cout<< "\nExercise 13: Create a function that can create 6 random numbers." <<endl;
+    Rand_Num();//Exercise 13 function.
+
+    cout<< "\nExercise 14: Fix the given code." <<endl;
+    Fix_Code();//Exercise 14.
+
+    cout<< "\nExercise 15: Create a fucntion that will print finished 10 times (x3 ways)." <<endl;
+    Finished();//Exercise 15.
+
     return 0;
 
-}
+    }
