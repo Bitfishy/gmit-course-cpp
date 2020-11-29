@@ -165,7 +165,9 @@
     else {//Else Condition.
     cout<<"You entered an invaled input. Move on to the next exercise."<<endl;//Prints message.
     }
+
     }
+
     //Exercise 13: Create six random numbers.
     void Rand_Num(){//Generates six random numbers.
     char r;//Char Declaration.
