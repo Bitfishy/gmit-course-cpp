@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1613317381 source:c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab4-programclass\lab4-programclass\main.cpp
+	<iostream>
+	<string>
+	"labInfo.cpp"
+
+1613319166 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab4-programclass\lab4-programclass\labinfo.h
+	<string>
+	<iostream>
+	<iomanip>
+
+1613318672 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab4-programclass\lab4-programclass\labinfo.cpp
+	<iostream>
+	"labInfo.h"
+	<string>
+
