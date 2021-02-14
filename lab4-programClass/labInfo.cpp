@@ -1,4 +1,3 @@
-#include <iostream>
 #include "labInfo.h"
 #include <string>
 

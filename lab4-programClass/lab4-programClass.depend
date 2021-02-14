@@ -14,3 +14,18 @@
 	"labInfo.h"
 	<string>
 
+1613319350 source:c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab4-programclass\main.cpp
+	<iostream>
+	<string>
+	"labInfo.cpp"
+	<iomanip>
+
+1613323215 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab4-programclass\labinfo.cpp
+	"labInfo.h"
+	<string>
+
+1613319330 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab4-programclass\labinfo.h
+	<string>
+	<iostream>
+	<iomanip>
+
