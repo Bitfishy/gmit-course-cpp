@@ -9,8 +9,9 @@ class FootballClub{
       string clubname;
       string district;
       string stripColour;
-      int squad[23];
-      int team[15];
+      PlayerClass squad[23];
+      PlayerClass team[15];
+
 
   public:
 
@@ -24,18 +25,19 @@ class FootballClub{
         void setClubname(string clubname); //function to set club name in private class and call it from main.
         void printInfo(); //function to  print information.
 
-        void addTeamPlayer(player tmp, int position){
+        void addPlayer(PlayerClass tmp, int position){
         team[position].setName(tmp.getName());
         team[position].setNumber(tmp.getNumber());
         team[position].setDOB(tmp.getDOB());
        }
 /*
-        void addSquadPlayer(player tmp, int position){
+        void addSquadPlayer(PlayerClass tmp, int position){
         squad[position].setName(tmp.getName());
         squad[position].setNumber(tmp.getNumber());
         squad[position].setDOB(tmp.getDOB());
        }
 */
+
 
 
         };

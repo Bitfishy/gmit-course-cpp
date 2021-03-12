@@ -12,6 +12,7 @@ class FootballClub{
       PlayerClass squad[23];
       PlayerClass team[15];
 
+
   public:
 
     FootballClub();
@@ -24,19 +25,19 @@ class FootballClub{
         void setClubname(string clubname); //function to set club name in private class and call it from main.
         void printInfo(); //function to  print information.
 
-
-        void addTeamPlayer(player_tmp, int i){
-        team[i].setName(tmp.getName());
-        team[i].setNumber(tmp.getNumber());
-        team[i].setDOB(tmp.getDOB());
+        void addPlayer(PlayerClass tmp, int position){
+        team[position].setName(tmp.getName());
+        team[position].setNumber(tmp.getNumber());
+        team[position].setDOB(tmp.getDOB());
        }
 /*
-        void addSquadPlayer(player tmp, int i){
-        squad[1].setName(tmp.getName());
-        squad[1].setNumber(tmp.getNumber());
-        squad[1].setDOB(tmp.getDOB());
+        void addSquadPlayer(PlayerClass tmp, int position){
+        squad[position].setName(tmp.getName());
+        squad[position].setNumber(tmp.getNumber());
+        squad[position].setDOB(tmp.getDOB());
        }
 */
+
 
 
         };

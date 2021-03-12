@@ -2,17 +2,14 @@
 #include <string>
 #include <iostream>
 
+
 using namespace std;
 
     FootballClub::FootballClub(string clubname, string district){ //constructor.
             this->clubname = clubname; //declares club name.
             this->district = district; //declares district.
         }
-/*
-        FootballClub::addPlayer(string player, int position){ //constructor with parameters.
-            this->player = player tmp;
-            this->position = position; */
-        }
+
          string FootballClub::getClubname(){ //function to get club name from private class.
             return clubname; //returns clubname.
         }
@@ -25,4 +22,5 @@ using namespace std;
         void FootballClub::printInfo(){ //function to print information.
         cout << clubname << "\n" << district << endl; //prints out club name and district.
         };
+
 
