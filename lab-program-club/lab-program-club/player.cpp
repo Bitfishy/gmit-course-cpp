@@ -8,6 +8,10 @@ using namespace std;
             this->forename = forename; //declares foree.
             this->surname = surname; //declares surname.
         }
+        PlayerClass::addPlayer(string player, int position){ //constructor with parameters.
+            this->player = player_tmp;
+            this->position = position;
+        }
 
          string PlayerClass::getForename(){ //function to get forename from private class.
             return forename; //returns forename.

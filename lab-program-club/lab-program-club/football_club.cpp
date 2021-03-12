@@ -8,11 +8,7 @@ using namespace std;
             this->clubname = clubname; //declares club name.
             this->district = district; //declares district.
         }
-/*
-        FootballClub::addPlayer(string player, int position){ //constructor with parameters.
-            this->player = player tmp;
-            this->position = position; */
-        }
+
          string FootballClub::getClubname(){ //function to get club name from private class.
             return clubname; //returns clubname.
         }
