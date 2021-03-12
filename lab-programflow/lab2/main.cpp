@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 #include "functions.h"
 #include "stdio.h"
@@ -7,7 +7,7 @@ using namespace std;
     int main(){
     cout<< "Lab information"<<endl;
     labinfo(); //Exercise 1 function.
-/*
+
     cout<< "Exercise 2: Take in two numbers and return the largest number."<<endl;
     Largest_Val(); //Exercise 2 function.
 
@@ -67,7 +67,7 @@ using namespace std;
     cout<< "You selected the wrong input. Move on to the next exercise."<<endl;//Prints message.
 
     }
-*/
+
     cout<< "Exercise 9: Write a temperature conversion function." <<endl;
     Temp_Conv();//Exercise 9 function.
 
@@ -92,3 +92,4 @@ using namespace std;
     return 0;
 
     }
+*/

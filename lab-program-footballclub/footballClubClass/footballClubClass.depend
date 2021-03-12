@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1584205420 source:c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-footballclub\footballclubclass\main.cpp
+	<iostream>
+
+1614451969 source:c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-club\lab-program-club\football_club.cpp
+	"football_club.h"
+	<string>
+	<iostream>
+
+1615563912 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-club\lab-program-club\football_club.h
+	<iostream>
+	"player.h"
+
+1615563537 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-club\lab-program-club\player.h
+	<iostream>
+
+1615561656 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-club\lab-program-club\main.cpp
+	<iostream>
+	"football_club.cpp"
+	"player.cpp"
+
+1614451969 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-club\lab-program-club\football_club.cpp
+	"football_club.h"
+	<string>
+	<iostream>
+
+1615556540 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-club\lab-program-club\player.cpp
+	"player.h"
+	<string>
+	<iostream>
+

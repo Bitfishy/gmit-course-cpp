@@ -1,24 +1,39 @@
+
+// Euro1.cpp
 #include <iostream>
 
 using namespace std;
+//Class to convert
+class convert{
+  private:
+    double rate = 2.28;
+  public:
 
-int main(){
+  int size;
+  float bhd;
+
+    float calculate(int inputVal){
+    return inputVal*rate;
+  }
+
+};
+int main() {
+
+// float calculate
+ float BHD[] = {1, 2, 3, 4, 5}; //an array
+
+  convert currency;//task 1: Declare an object of type class converter
+  //currency.bhd;
 {
-   char cTree;
-    int iSize;
-    int iSpace;
-    int iChars;
-    cout << "Enter the number of rows you would like in the tree ";
-    cin >> iSize;
-    cout << "Enter sybol you would like to use";
-    cin >> cTree;
-    for(int i = 0; i < iSize; i++){
-    iSpace = (iSize-i)-1;
-    iChars = (2*i)+1;
-    string sSpace(iSpace, '_');
-    string sTree(iChars, cTree);
-    cout <<sSpace<<sTree<<sSpace<<endl;
-    }}
-    return 0;
-}
+    currency.calculate(){
+    for(int i=1; i<size; i++){//Task 2. Create a for loop, and
+    //(Task 3)on each iteration of the for loop
+    //use the function float calculate(int inputVal)
 
+
+
+  cout << BHD[i] << " BHD =" << bhd << " EUR"<<endl;
+  } }
+  return 0;
+}
+};
