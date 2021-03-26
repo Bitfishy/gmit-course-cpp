@@ -5,7 +5,7 @@
 using namespace std;
 
     PlayerClass::PlayerClass(string forename, string surname){ //constructor with parameters.
-            this->forename = forename; //declares foree.
+            this->forename = forename; //declares forename.
             this->surname = surname; //declares surname.
         }
 
@@ -15,21 +15,25 @@ using namespace std;
          string PlayerClass::getSurname(){ //function to get surname from private class.
             return surname; //returns surname.
         }
- /*        int PlayerClass::getNumber(){ //function to get number from private class.
-            return mobileNum; //returns number.
+/*      int PlayerClass::getNumber(){ //function to get number from private class.
+          return mobileNum; //returns number.
         }
         void PlayerClass::setNumber(int mobileNum){ //function to set number in private class and call it from main.
             this->mobileNum = mobileNum; //declares jersey number.
         }
-        */
 
-        void PlayerClass::setForename(string forename, string surname, int mobileNum){ //function to set name and number in private class and call it from main.
+
+        void PlayerClass::setName(string forename, string surname){ //function to set name and number in private class and call it from main.
             this->forename = forename; //declares forename.
             this->surname = surname; //declares surname.
-            this->mobileNum = mobileNum; //declares mobile number.
+      //      this->mobileNum = mobileNum; //declares mobile number.
         }
+
+*/
         void PlayerClass::printPlayerInfo(){ //function to print information.
         cout << forename << " " << surname << endl; //prints out name.
+
         };
+
 
 

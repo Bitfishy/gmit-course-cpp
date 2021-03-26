@@ -1,3 +1,4 @@
+//#pragma once
 #include <iostream>
 #include "player.h"
 
@@ -15,7 +16,7 @@ class FootballClub{
 
   public:
 
-    FootballClub();
+//    FootballClub();
     FootballClub(string clubname, string district); //constructor with parameters.
 
         string getClubname(); //function to get club name from private class.
@@ -25,10 +26,11 @@ class FootballClub{
         void setClubname(string clubname); //function to set club name in private class and call it from main.
         void printInfo(); //function to  print information.
 
+
         void addPlayer(PlayerClass tmp, int position){
-        team[position].setName(tmp.getName());
-        team[position].setNumber(tmp.getNumber());
-        team[position].setDOB(tmp.getDOB());
+        team[position].setName(tmp.getForename(),tmp.getSurname());
+     //   team[position].setNumber(tmp.getNumber());
+    //    team[position].setDOB(tmp.getDOB());
        }
 /*
         void addSquadPlayer(PlayerClass tmp, int position){
@@ -36,8 +38,7 @@ class FootballClub{
         squad[position].setNumber(tmp.getNumber());
         squad[position].setDOB(tmp.getDOB());
        }
+
 */
-
-
 
         };

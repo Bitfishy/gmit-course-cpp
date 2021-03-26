@@ -2,7 +2,6 @@
 #include <string>
 #include <iostream>
 
-
 using namespace std;
 
     FootballClub::FootballClub(string clubname, string district){ //constructor.
