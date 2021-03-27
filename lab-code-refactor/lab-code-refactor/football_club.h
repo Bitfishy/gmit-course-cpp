@@ -10,13 +10,12 @@ private:
     string clubname;
     string district;
     string stripColour;
+    Player* Manager = new Player();
 
     // const static int , way to make a constant variable in a class
     const static int MAXSQUAD = 23;
     const static int MAXTEAM = 15;
     Player squad[MAXSQUAD];
-    Player team[MAXTEAM];
-
 
 
 public:
@@ -26,6 +25,7 @@ public:
     FootballClub();
     FootballClub(string clubname, string district);
 
+
     string getClubname();
     string getDistrict();
 
@@ -33,11 +33,16 @@ public:
     void setDistrictname(string district);
     void printInfo();
 
+    void setManagerName(string ForeName,string Surname);
+    string getManagerName();
+    void PrintManagerInfo();
 
     void addPlayerToSquad(Player tmp, int position);
     void addPlayerToTeam(Player tempPlayer,int ID);
 
     void printTeam();
+
     void printSquad();
+
 };
 

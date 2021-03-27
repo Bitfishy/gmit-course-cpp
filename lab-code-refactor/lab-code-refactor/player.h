@@ -10,12 +10,13 @@ private:
     string surname;
     string position;
     string mobileNumber;
+    string starting;
     int dob;
 
 public:
     Player();
     Player(string forename, string surname);
-    Player(string forename, string surname, int mobileNumber, string position);
+    Player(string forename, string surname, int mobileNumber, string position, string starting);
 
     void printPlayerInfo();
     string getForename();
@@ -28,6 +29,8 @@ public:
     void setMobileNumber(string mobileNumber);
     string getMobileNumber();
 
+    void setStarting(string starting);
+    string getStarting();
 
     void setDOB(int dob);
     int getDOB();

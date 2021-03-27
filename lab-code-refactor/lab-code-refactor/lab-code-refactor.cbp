@@ -32,7 +32,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="football_club.cpp" />
+		<Unit filename="football_club.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="player.cpp" />
+		<Unit filename="player.h" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>
