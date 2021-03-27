@@ -1,26 +1,63 @@
-#include "football_club.h"
-#include <string>
-#include <iostream>
+#include"football_club.h"
 
+    FootballClub::FootballClub(){
+        this->clubname = "NA";
+        this->district = "NA";
+    }
+    FootballClub::FootballClub(string clubname, string district){
+        this->clubname = clubname;
+        this->district = district;
+    }
 
-using namespace std;
+    string FootballClub::getClubname(){
+        return clubname;
+    }
+    string FootballClub::getDistrict(){
+        return district;
+    }
 
-    FootballClub::FootballClub(string clubname, string district){ //constructor.
-            this->clubname = clubname; //declares club name.
-            this->district = district; //declares district.
+    void FootballClub::setClubname(string clubname){
+        this->clubname = clubname;
+    }
+
+    void FootballClub::setDistrictname(string district){
+        this->district = district;
+    }
+
+    void FootballClub::printInfo(){
+     cout<<clubname<<endl;
+    }
+
+    void FootballClub::addPlayerToTeam(Player tmp,int ID){
+
+        this->team[ID].setName(tmp.getForename(),tmp.getSurname());
+        this->team[ID].setDOB(tmp.getDOB());
+        this->team[ID].setPosition(tmp.getPosition());
+        this->team[ID].setMobileNumber(tmp.getMobileNumber());
+    }
+
+    void FootballClub::addPlayerToSquad(Player tmp, int position){
+
+       this->squad[position].setName(tmp.getForename(), tmp.getSurname());
+       this->squad[position].setPosition(tmp.getPosition());
+        this->squad[position].setDOB(tmp.getDOB());
+        this->squad[position].setPosition(tmp.getPosition());
+        this->squad[position].setMobileNumber(tmp.getMobileNumber());
+
+    }
+    void FootballClub::printTeam(){
+
+        for(int i=0;i<MAXTEAM;i++){
+            team[i].printPlayerInfo();
         }
 
-         string FootballClub::getClubname(){ //function to get club name from private class.
-            return clubname; //returns clubname.
+    }
+    void FootballClub::printSquad(){
+
+        for(int i=0;i<MAXSQUAD;i++){
+            squad[i].printPlayerInfo();
         }
-         string FootballClub::getDistrict(){ //function to get district from private class.
-            return district; //returns district.
-        }
-        void FootballClub::setClubname(string clubname){ //function to set club name in private class and call it from main.
-            this->clubname = clubname; //declares club name.
-        }
-        void FootballClub::printInfo(){ //function to print information.
-        cout << clubname << "\n" << district << endl; //prints out club name and district.
-        };
+
+    }
 
 

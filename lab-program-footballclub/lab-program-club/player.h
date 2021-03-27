@@ -1,41 +1,36 @@
-#pragma once
 #include <iostream>
 
 using namespace std;
 
-class PlayerClass{
-  private:
-    //private class attributes.
-      string forename;
-      string surname;
-      string position;
-      string name;
-      int mobileNum;
-      string dob;
-
-  public:
-
-    PlayerClass();
-
-    PlayerClass(string forename, string surname); //constructor with parameters.
-    void setForename(string forename, string surname, int mobileNum); //function to set player info in private class and call it from main.
-
-        void printPlayerInfo(); //function to print information.
-        string getForename(); //function to get forename from private class.
-        string getSurname(); //function to get surname from private class.
-
-        void setName(string name);
-        string getName() {
-            return name;
-        }
-        void setNumber(int num); //function to set jersey number in private and call it from main.
-        int getNumber() { //function to get number from private class.
-            return mobileNum;
-        }
-        void setDOB(string year);
-        string getDOB(){
-            return dob;
-        }
 
 
-        };
+class Player{
+private:
+    string forename;
+    string surname;
+    string position;
+    string mobileNumber;
+    int dob;
+
+public:
+    Player();
+    Player(string forename, string surname);
+    Player(string forename, string surname, int mobileNumber, string position);
+
+    void printPlayerInfo();
+    string getForename();
+    string getSurname();
+    void setName(string name);
+    void setName(string forename,string surname);
+
+    void setPosition(string position);
+    string getPosition();
+    void setMobileNumber(string mobileNumber);
+    string getMobileNumber();
+
+
+    void setDOB(int dob);
+    int getDOB();
+
+};
+

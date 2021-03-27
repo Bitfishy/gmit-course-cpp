@@ -20,3 +20,17 @@
 1614463638 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-club\lab-program-club\player.h
 	<iostream>
 
+1616866640 source:c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-footballclub\lab-program-club\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<sstream>
+	"football_club.h"
+
+1616866502 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-footballclub\lab-program-club\football_club.h
+	<iostream>
+	"player.h"
+
+1616866502 c:\users\almac\documents\labs_cpp\gmit-course-cpp\lab-program-footballclub\lab-program-club\player.h
+	<iostream>
+

@@ -79,7 +79,7 @@ int main()
     cout<<"SQUAD"<<endl;
     club.printSquad();
 
-    cout<<"\nTeam"<<endl;
+    cout<<"TEAM"<<endl;
     club.printTeam();
 
 

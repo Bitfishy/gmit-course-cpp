@@ -1,58 +1,105 @@
 #include <iostream>
-#include "football_club.h"
-#include "player.h"
+#include <string>
+#include <fstream>
+#include <sstream>
 
 using namespace std;
 
+#include "football_club.h"
+
+void test(){
+
+/*
+string galwayTeam[2][]=   {{"Ruairi", "Lavelle"},
+                            {"Eoghan", "Kerin"},
+                            {"Sean Andy", "Ó Ceallaigh"},
+                            {"David", "Wynne"},
+                            {"Gary", "O'Donnell"},
+                            {"Gareth", "Bradshaw"},
+                            {"Johnny", "Heaney"},
+                            {"Thomas", "Flynn"},
+                            {"Ciarán", "Duggan"},
+                            {"Michael", "Daly"},
+                            {"Johnathan", "Duane"},
+                            {"Eamon", "Brannigan"},
+                            {"Barry", "McHugh"},
+                            {"Padraig", "Cunningham"},
+                            {"Antaine", "Ó Laoí"}}
+
+*/
+
+}
+
+
+
+
 int main()
 {
-    FootballClub club("Liverpool","Anfield"); //class object.
-    club.printInfo(); //prints out club info (club name and club district.)
-    club.setClubname("The Pool"); //swaps club's name.
+    FootballClub club;
+    club.printInfo();
+    club.setClubname("Castletown");
+    club.setDistrictname("Westmeath");
 
-    string clubName = club.getClubname(); //gets club's name.
-    cout << "\n" << clubName << endl; //Prints out club's name the second way.
-    string clubDistrict; //declares club district.
-    clubDistrict = club.getDistrict(); //calls function to get district from private class.
-    cout << clubDistrict << "\n" << endl; //Prints out club's district the second way.
+    string clubName = club.getClubname();
+    clubName = club.getDistrict();
+    cout << clubName<< endl;
 
-    //int sizeSquad = 40;
-    int sizeTeam = 15;
-    PlayerClass squad[40];
-    PlayerClass team[15];
+    Player playerTemp;
 
-    //PlayerClass player1;
-    team[1].setName("Stevie");
-    team[1].setNumber(122334);
-    team[1].setDOB("1984");
+    //READING DATA FROM A FILE
+    fstream infile;
+    infile.open("teamSquad.csv", ios::in);
+    string firstName, secondName, dob, position, mobile;
+    string line;
+    int i = 0;
+    while(std::getline(infile, line)){
+        std::istringstream strLine(line);
+        if(!(strLine>>firstName>>secondName>>dob>>position>>mobile)){
+            break;
+        }
+        else{
+            cout<<"Input ->"<<firstName<<" "<<secondName<<" "<<dob<<" "<<position<<" "<<mobile<<endl;
+            playerTemp.setName(firstName,secondName);
+            //note stoi convert a string to a int
+            playerTemp.setDOB(stoi(dob));
+            playerTemp.setPosition(position);
+            playerTemp.setMobileNumber(mobile);
+            club.addPlayerToSquad(playerTemp, i);
+        }
+        //increments
+        i =i+1;
+    }
+    infile.close();
 
-    club.addPlayer(team[1], 1);
-
-   // PlayerClass player2;
-    team[2].setName("Davy");
-    team[2].setNumber(12345);
-    team[2].setDOB("1985");
-
-    club.addPlayer(team[2], 2);
-
-  //  PlayerClass player3;
-    team[3].setName("Cianan");
-    team[3].setNumber(987654);
-    team[3].setDOB("1986");
-
-    club.addPlayer(team[3], 3);
-
-   // PlayerClass team[sizeTeam];
-    for(int i=1; i<sizeTeam; i++){
-        team[i].setName("");
-        team[i].setNumber(i);
-        team[i].setDOB("");
-        club.addPlayer(team[i],i);
-
+    //READING DATA FROM A FILE
+    infile.open("teamTeam.csv", ios::in);
+    i = 0; //reset i
+    while(std::getline(infile, line)){
+        std::istringstream strLine(line);
+        if(!(strLine>>firstName>>secondName>>dob>>position>>mobile)){
+            break;
+        }
+        else{
+            //cout<<"Input ->"<<firstName<<" "<<secondName<<" "<<dob<<" "<<position<<" "<<mobile<<endl;
+            playerTemp.setName(firstName,secondName);
+            //note stoi convert a string to a int
+            playerTemp.setDOB(stoi(dob));
+            playerTemp.setPosition(position);
+            playerTemp.setMobileNumber(mobile);
+            club.addPlayerToTeam(playerTemp, i);
+        }
+        //increments
+        i =i+1;
     }
 
+    cout<<"<<---------------->>"<<endl;
+    cout<<"SQUAD"<<endl;
+    club.printSquad();
+    cout<<"TEAM"<<endl;
+    club.printTeam();
+
+
+
+
     return 0;
-
-};
-
-
+}
